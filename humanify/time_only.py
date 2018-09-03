@@ -1,14 +1,16 @@
 import datetime as _datetime
-from .date import date
-from .time_only import time_only
 
-def datetime(input_datetime):
+
+def time_only(input_datetime):
 
     # Return if the type isn't correct
     if type(input_datetime) is not _datetime.datetime:
         raise TypeError("Argument is not of type datetime.datetime")
         return None
 
-    result = date(input_datetime)
-    result += time_only(input_datetime) 
+    result = str(input_datetime.hour) + ':'
+    result += str(input_datetime.minute) + ':'
+    result += str(input_datetime.second)
+
     return result
+

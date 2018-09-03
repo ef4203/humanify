@@ -7,3 +7,5 @@ __author__ = 'Elias F.'
 __license__ = 'MIT'
 
 from .datetime import datetime  # noqa
+from .date import date  # noqa
+from .time_only import time_only  # noqa
