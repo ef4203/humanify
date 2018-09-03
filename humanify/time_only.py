@@ -12,8 +12,11 @@ def time_only(input_datetime):
         result = '0' + str(input_datetime.hour) + ':'
     else:
         result = str(input_datetime.hour) + ':'
-
-    result += str(input_datetime.minute) + ':'
+    
+    if input_datetime.minute < 10:
+        result += '0' + str(input_datetime.minute)
+    else:
+        result += str(input_datetime.minute) + ':'
 
     if input_datetime.second < 10:
         result += '0' + str(input_datetime.second)
