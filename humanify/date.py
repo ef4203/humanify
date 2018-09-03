@@ -57,7 +57,7 @@ def date(input_datetime):
         result += str(input_datetime.day) + ordinals[3]  # th-ending
 
     result += ' of '
-    result += months[input_datetime.month] + ' '
+    result += months[input_datetime.month - 1] + ' '
     result += str(input_datetime.year) + ' '
 
     return result
