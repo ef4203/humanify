@@ -13,4 +13,3 @@ def time_only(input_datetime):
     result += str(input_datetime.second)
 
     return result
-

@@ -32,6 +32,7 @@ ordinals = [
     'th'
 ]
 
+
 def date(input_datetime):
 
     # Return if the type isn't correct

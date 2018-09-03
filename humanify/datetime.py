@@ -2,6 +2,7 @@ import datetime as _datetime
 from .date import date
 from .time_only import time_only
 
+
 def datetime(input_datetime):
 
     # Return if the type isn't correct
@@ -10,5 +11,6 @@ def datetime(input_datetime):
         return None
 
     result = date(input_datetime)
-    result += time_only(input_datetime) 
+    result += time_only(input_datetime)
+
     return result
