@@ -6,4 +6,4 @@ __title__ = 'humanify'
 __author__ = 'Elias F.'
 __license__ = 'MIT'
 
-from .datetime import datetime
+from .datetime import datetime  # noqa
