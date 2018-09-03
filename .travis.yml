@@ -11,4 +11,4 @@ install:
 
 script:
     - pylava
-    - ./tests/unitest.py
+    - cd tests && ./unitest.py
