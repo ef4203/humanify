@@ -8,8 +8,16 @@ def time_only(input_datetime):
         raise TypeError("Argument is not of type datetime.datetime")
         return None
 
-    result = str(input_datetime.hour) + ':'
+    if input_datetime.hour < 10:
+        result = '0' + str(input_datetime.hour) + ':'
+    else:
+        result = str(input_datetime.hour) + ':'
+
     result += str(input_datetime.minute) + ':'
-    result += str(input_datetime.second)
+
+    if input_datetime.second < 10:
+        result += '0' + str(input_datetime.second)
+    else:
+        result += str(input_datetime.second)
 
     return result
