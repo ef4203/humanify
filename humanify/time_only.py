@@ -14,7 +14,7 @@ def time_only(input_datetime):
         result = str(input_datetime.hour) + ':'
 
     if input_datetime.minute < 10:
-        result += '0' + str(input_datetime.minute)
+        result += '0' + str(input_datetime.minute) + ':'
     else:
         result += str(input_datetime.minute) + ':'
 
