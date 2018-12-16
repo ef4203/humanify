@@ -38,7 +38,6 @@ def date(input_datetime):
     # Return if the type isn't correct
     if type(input_datetime) is not _datetime.datetime:
         raise TypeError("Argument is not of type datetime.datetime")
-        return None
 
     # Determine day of the week
     result = str(weekdays[input_datetime.weekday()]) + ', '
