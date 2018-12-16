@@ -8,7 +8,6 @@ def datetime(input_datetime):
     # Return if the type isn't correct
     if type(input_datetime) is not _datetime.datetime:
         raise TypeError("Argument is not of type datetime.datetime")
-        return None
 
     result = date(input_datetime)
     result += time_only(input_datetime)
