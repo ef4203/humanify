@@ -7,7 +7,7 @@ Python library to convert a timestamp object into a human readable string
 
 ## Installation
 ```
-pip install -U https://github.com/ef4203//humanify/archive/master.zip
+pip install -U https://github.com/ef4203/humanify/archive/master.zip
 ```
 
 See Documentation for further information
