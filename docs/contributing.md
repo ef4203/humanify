@@ -1,6 +1,6 @@
 # Contributing to Humanify
 
-A simple guide on best practises and enviroment setup for contributing to Humanify.
+A simple guide on best practises and enviroment setup for contributing to humanify.
 
 ## Setting up a developer enviroment
 

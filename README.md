@@ -6,6 +6,20 @@
 
 Python library to convert a timestamp object into a human readable string
 
+## Examples
+
+```python
+#!/usr/bin/env python3
+import humanify
+import datetime
+
+current_date = datetime.datetime.now()
+
+print(humanify.time_only(current_date))
+print(humanify.date(current_date))
+print(humanify.datetime(current_date))
+```
+
 ## Installation
 
 Directly with `pip`:
@@ -22,4 +36,4 @@ pipenv install -e git+https://github.com/ef4203/humanify/archive/master.zip
 
 ## Further Documentation
 
-You may find more information about Humanify in the [documentation](docs/index.md) files.
+You may find more information about humanify in the [documentation](docs/index.md) files.
