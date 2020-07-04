@@ -16,6 +16,6 @@ jobs:
       - name: Install dependencies
         run: pip install pipenv && pipenv install
       - name: Lint with pylint
-        run: pipenv run pylint humanify
+        run: pipenv run python -m pylint humanify
       - name: Test with nose
         run: pipenv run nosetests
