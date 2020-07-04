@@ -20,4 +20,6 @@ With [Pipenv](https://pipenv.pypa.io/en/latest/):
 pipenv install -e git+https://github.com/ef4203/humanify/archive/master.zip
 ```
 
-See the [documentation](docs/documentation.md) for further information.
+## Further Documentation
+
+You may find more information about Humanify in the [documentation](docs/index.md) files.

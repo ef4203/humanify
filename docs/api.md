@@ -1,6 +1,4 @@
-# Documentation for humanify
-
-## Method Reference
+## API Reference
 
 ### Time Only
 
