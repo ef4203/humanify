@@ -1,36 +1,31 @@
 import datetime as _datetime
 
 weekdays = [
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-    'Sunday'
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
 ]
 
 months = [
-    'January',
-    'February',
-    'March',
-    'April',
-    'May',
-    'June',
-    'July',
-    'August',
-    'September',
-    'October',
-    'November',
-    'December'
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
 ]
 
-ordinals = [
-    'st',
-    'nd',
-    'rd',
-    'th'
-]
+ordinals = ["st", "nd", "rd", "th"]
 
 
 def date(input_datetime):
@@ -40,7 +35,7 @@ def date(input_datetime):
         raise TypeError("Argument is not of type datetime.datetime")
 
     # Determine day of the week
-    result = str(weekdays[input_datetime.weekday()]) + ', '
+    result = str(weekdays[input_datetime.weekday()]) + ", "
 
     # Determine ordinal sign for the dates day
     if input_datetime.day == 1 or input_datetime.day == 21 or input_datetime == 31:
@@ -55,8 +50,8 @@ def date(input_datetime):
     else:
         result += str(input_datetime.day) + ordinals[3]  # th-ending
 
-    result += ' of '
-    result += months[input_datetime.month - 1] + ' '
-    result += str(input_datetime.year) + ' '
+    result += " of "
+    result += months[input_datetime.month - 1] + " "
+    result += str(input_datetime.year) + " "
 
     return result

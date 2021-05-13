@@ -1,0 +1,21 @@
+name: humanify
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.x
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+          architecture: "x64"
+      - name: Install dependencies
+        run: pip install pipenv && pipenv install
+      - name: Lint with pylint
+        run: pipenv run python -m pylint humanify
+      - name: Test with nose
+        run: pipenv run nosetests
