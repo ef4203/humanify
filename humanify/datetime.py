@@ -4,8 +4,15 @@ from .time_only import time_only
 
 
 def datetime(input_datetime):
+    """Returns human readable string of both date and time.
 
-    # Return if the type isn't correct
+    Parameters:
+                input_datetime (datetime.datetime object): datetime object from standare datetime module
+
+    Returns:
+            result (str): human readable date and time.
+    """
+
     if type(input_datetime) is not _datetime.datetime:
         raise TypeError("Argument is not of type datetime.datetime")
 
