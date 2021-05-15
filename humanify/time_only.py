@@ -2,8 +2,15 @@ import datetime as _datetime
 
 
 def time_only(input_datetime):
+    """Returns human readable string of time.
 
-    # Return if the type isn't correct
+    Parameters:
+                input_datetime (datetime.datetime object): datetime object from standare datetime module
+
+    Returns:
+            result (str): human readable time
+    """
+
     if type(input_datetime) is not _datetime.datetime:
         raise TypeError("Argument is not of type datetime.datetime")
 
